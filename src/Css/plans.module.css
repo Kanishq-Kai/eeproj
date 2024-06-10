@@ -1,0 +1,136 @@
+.container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    user-select: none;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.header {
+    font-size: 2em;
+    background-color: rgb(24, 225, 188);
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.toDashboard {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #69b3ef;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toDashboard:hover {
+    background-color: #579ad4;
+}
+
+.plansWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.plan {
+    flex: 1 1 calc(33% - 20px);
+    background-color: #69b3efaa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px 5px 0 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field label {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.field input {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.submitButton {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #24e1bc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submitButton:hover {
+    background-color: #1cbf9a;
+}
+
+
+.subBtn {
+    width: fit-content;
+    padding: 6px 10px;
+    font-weight: bold;
+    margin: 10px;
+    background-color: rgb(0, 255, 179);
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.subBtn:hover {
+    transform: translateY(-5px);
+
+}
+
+
+@media (max-width: 768px) {
+    .plan {
+        flex: 1 1 100%;
+    }
+}

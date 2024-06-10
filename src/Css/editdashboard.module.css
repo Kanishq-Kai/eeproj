@@ -1,4 +1,42 @@
 .lnk {
     text-decoration: none;
     color: tan;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.lnk:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+.btnbtn {
+    color: tan;
+    border: 1px solid black;
+    padding: 7px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.btnbtn:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+form input {
+    width: 300px;
+}
+
+form label {
+    margin-right: 5px;
 }

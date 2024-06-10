@@ -1,14 +1,19 @@
 import React, { createContext, useState } from 'react';
+
 const GlobalContext = createContext();
+
 const GlobalProvider = ({ children }) => {
     const [info, setInfo] = useState({
         username: "",
         email: "",
-        plan: "",
         PAN: "",
-        amount: 0,
-        planDays: 180,
-        nextAmountDays: 30
+        monthlyIncome: 0,
+        monthlyPayment: 0,
+        plan: "",
+        receivableAmount: 0,
+        Basic: 5, Premium: 10, Ultra: 12,
+        date: "",
+        end: ""
     });
     return (
         <GlobalContext.Provider value={{ info, setInfo }}>
@@ -16,4 +21,5 @@ const GlobalProvider = ({ children }) => {
         </GlobalContext.Provider>
     );
 };
+
 export { GlobalContext, GlobalProvider };

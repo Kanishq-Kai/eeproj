@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { GlobalProvider } from './Components/GlobalContext'; // Import the GlobalProvider component
 import SignUp from './Components/SignUp.jsx';
 import Dashboard from './Components/Dashboard.jsx';
+import Plans from './Components/Plans.jsx';
 import EditDashboard from './Components/EditDashboard.jsx';
 
 const App = () => {
@@ -18,6 +19,10 @@ const App = () => {
     {
       path: '/edit',
       element: <EditDashboard />
+    },
+    {
+      path: '/plans',
+      element: <Plans />
     }
   ]);
 

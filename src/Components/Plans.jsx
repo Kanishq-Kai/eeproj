@@ -104,7 +104,7 @@ const Plans = () => {
                         <form className={styles.fields} onSubmit={handleSubmit}>
                             <div className={styles.field}>
                                 <label>Tenure:</label>
-                                <input type="text" name={`tenure${plan}`} defaultValue={(plan === 'Basic' ? '6 Months' : '') || (plan === 'Premium' ? '12 Months' : "") || (plan === 'Ultra' ? '18 Months' : "")} disabled />
+                                <input type="text" name={`tenure${plan}`} defaultValue={(plan === 'Basic' ? '6 Months' : '') || (plan === 'Premium' ? '12 Months' : "") || (plan === 'Ultra' ? '18 Months' : "")} readOnly />
                             </div>
                             <div className={styles.field}>
                                 <label>Monthly Income:</label>
@@ -112,7 +112,7 @@ const Plans = () => {
                             </div>
                             <div className={styles.field}>
                                 <label>Interest:</label>
-                                <input type="text" name={`interest${plan}`} defaultValue={`${interestRates[plan]}%`} disabled />
+                                <input type="text" name={`interest${plan}`} defaultValue={`${interestRates[plan]}%`} readOnly />
                             </div>
                             <div className={styles.field}>
                                 <label>Amount to be paid:</label>
